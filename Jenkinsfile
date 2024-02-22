@@ -9,7 +9,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                script {
+                    // Perintah Docker atau perintah lain yang ingin Anda jalankan
+                    sh 'npm install'
+                }
             }
         }
     }
